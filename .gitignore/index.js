@@ -42,18 +42,6 @@ bot.on('message', message => {
             if (err) console.error(err)
         })
     }
-    if ( message.content === prefix+"lesquen"){
-        if (cooldown.has()){
-            message.delete()
-            return
-        }
-        var image = (Math.floor(Math.random() * 44 + 1))
-        message.channel.send({files:["lesquen/lesquen"+image+".png"]})
-        cooldown.add()
-        setTimeout(() => {
-            cooldown.delete()
-        }, 8000)
-    }
 
     if (message.content === prefix + "aide"){
         var help = new Discord.RichEmbed()
