@@ -1,1 +1,1 @@
-worker: node indox.js
+worker: node indox
