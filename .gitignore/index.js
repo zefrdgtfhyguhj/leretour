@@ -46,7 +46,7 @@ bot.on('message', message => {
     if (message.content === prefix + "aide"){
         var help = new Discord.RichEmbed()
         .setTitle("$aide")
-        .addField("Commandes","$choose\n" + "$roll\n" + "$lesquen\n" + "$purge\n" + "$userinfo\n" + "$serverinfo\n" , true)
+        .addField("Commandes","$choose\n" + "$roll\n" + "$purge\n" + "$userinfo\n" + "$serverinfo\n" , true)
         .setColor(0x200ef5)
         message.channel.send(help);
        } 
