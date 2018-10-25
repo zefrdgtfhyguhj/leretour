@@ -1,9 +1,7 @@
 const Discord = require ('discord.js')
 const bot = new Discord.Client()
 const fs = require('fs')
-const moment = require('moment')
-const YTDL = require("ytdl-core")
-const economy = require('discord-eco')
+
 let prefix = '$'
 let cooldown = new Set()
 
