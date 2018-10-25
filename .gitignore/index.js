@@ -7,7 +7,7 @@ let prefix = '$'
 let cooldown = new Set()
 
 let avert = JSON.parse(fs.readFileSync('avert.json', 'utf8'))
-bot.login()
+bot.login(process.env.TOKEN)
     console.log( "ça marche !")
 bot.on('ready', function (){
     bot.user.setActivity('Hypology 53 - Rise of Botology').catch(console.error)
