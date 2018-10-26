@@ -42,8 +42,11 @@ bot.on('message', message => {
             if (err) console.error(err)
         })
     }
-        if ( message.content === prefix+"lesquen"){
-
+         if ( message.content === prefix+"lesquen"){
+        if (cooldown.has()){
+            message.delete()
+            return
+        }
         var replys = ["https://cdn.discordapp.com/attachments/505094448963911695/505467243170234378/lesquen1.png",
         "https://cdn.discordapp.com/attachments/505094448963911695/505467249746903055/lesquen2.png",
         "https://cdn.discordapp.com/attachments/505094448963911695/505467272953856000/lesquen3.png",
@@ -97,6 +100,10 @@ bot.on('message', message => {
         .setImage(reponse)
         .setColor(0x200ef5)
     message.channel.send(embed)
+    cooldown.add()
+        setTimeout(() => {
+            cooldown.delete()
+        }, 8000)
         }
     if (message.content === prefix + "aide"){
         var help = new Discord.RichEmbed()
