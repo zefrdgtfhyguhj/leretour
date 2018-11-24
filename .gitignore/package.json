@@ -1,15 +1,19 @@
 {
-  "name": "tentative",
+  "name": "botology",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "indox.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord-eco": "0.0.10",
+    "discord.js": "^11.3.2",
+    "fs-js": "^1.0.6",
+    "moment": "^2.22.1",
+    "util": "^0.10.3",
+    "ytdl-core": "^0.20.2"
   }
 }
-
