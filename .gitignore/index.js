@@ -4,7 +4,7 @@ const fs = require('fs')
 
 let prefix = '$'
 
-bot.login(process.env.TOKEN)
+bot.login(WatuopnWyqyIHH2p4RnHjGkyMJPHkQA4)
     console.log( "ça marche !")
 bot.on('ready', function (){
     bot.user.setActivity('Hypology 53 - Rise of Botology').catch(console.error)
